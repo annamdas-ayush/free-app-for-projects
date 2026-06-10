@@ -53,8 +53,12 @@
     <script>
       window.$docsify = {
         name: "Free for Developers",
-        repo: "ripienaar/free-for-dev",
-        search: ["/"],
+        loadSidebar: false,
+        search: {
+          paths: '/',
+          placeholder: 'Search',
+          noData: 'No results found!'
+        },
         darklightTheme: {
           siteFont : "Source Sans Pro, Helvetica Neue",
           defaultTheme : "light",
